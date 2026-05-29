@@ -40,8 +40,8 @@ body {
 }
 
 .profile-photo {
-  width: 84px;
-  height: 84px;
+  width: 110px;
+  height: 110px;
   border-radius: 999px;
   object-fit: cover;
   border: 3px solid #e5e7eb;
@@ -126,6 +126,96 @@ h1 {
 
 ul {
   padding-left: 22px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  border-left: 2px solid #e5e7eb;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 22px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid white;
+  outline: 2px solid #2563eb;
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+  white-space: nowrap;
+  min-width: 90px;
+  padding-top: 2px;
+}
+
+.timeline-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.timeline-item strong {
+  font-size: 16px;
+  color: #111827;
+}
+
+.timeline-place {
+  font-size: 14px;
+  color: #475569;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.paper-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.paper-title a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  text-decoration: underline;
+}
+
+.paper-authors {
+  font-size: 15px;
+  color: #374151;
+  margin: 0;
+}
+
+.paper-venue {
+  font-size: 14px;
+  color: #64748b;
+  font-style: italic;
+  margin: 0 0 6px;
 }
 
 .project-links {
