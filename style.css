@@ -32,16 +32,31 @@ body {
   margin: 0 0 16px;
 }
 
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid #e5e7eb;
+}
+
 h1 {
   font-size: clamp(42px, 7vw, 72px);
   line-height: 1;
-  margin: 0 0 14px;
+  margin: 0 0 10px;
 }
 
 .subtitle {
   font-size: 24px;
   color: #475569;
-  margin: 0 0 32px;
+  margin: 0;
   font-weight: 600;
 }
 
@@ -140,5 +155,15 @@ footer {
 
   .intro {
     font-size: 16px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    width: 96px;
+    height: 96px;
   }
 }
