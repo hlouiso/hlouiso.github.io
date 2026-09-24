@@ -272,18 +272,21 @@ h2::after {
 
 .interests li {
   display: flex;
-  align-items: baseline;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.85rem;
   padding: 0.8rem 0;
   border-bottom: 1px solid var(--line);
   font-weight: 500;
 }
 
-.index {
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  font-variant-numeric: tabular-nums;
-  color: var(--accent);
+.interests li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateY(-1px);
 }
 
 /* Dated entries (timeline + papers) -------------------------------------- */
