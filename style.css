@@ -40,7 +40,7 @@
    -------------------------------------------------------------------------- */
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --bg: #faf9f6;
   --glow: rgba(30, 79, 145, 0.085);
@@ -63,26 +63,6 @@
 
   --date-w: 7rem;
   --rail-w: 1.75rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1113;
-    --glow: rgba(141, 177, 240, 0.09);
-    --surface: #16191c;
-    --text: #ebe8e1;
-    --text-2: #b7b3ab;
-    --muted: #8e8a82;
-    --line: #262a2f;
-    --line-strong: #3b4047;
-    --accent: #8db1f0;
-    --accent-hover: #aec7f6;
-    --accent-soft: rgba(141, 177, 240, 0.13);
-    --on-accent: #0f1113;
-    --selection-bg: #8db1f0;
-    --selection-fg: #0f1113;
-    --shadow: none;
-  }
 }
 
 /* --------------------------------------------------------------------------
