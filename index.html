@@ -1,122 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1113" media="(prefers-color-scheme: dark)">
+
   <title>Hugo Louiso</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Hugo Louiso is a French PhD student in cryptography at the PQC-X lab, Xi'an Jiaotong-Liverpool University, Suzhou, China. Post-quantum cryptography, zero-knowledge proofs and hash-based constructions.">
+  <meta name="author" content="Hugo Louiso">
+  <link rel="canonical" href="https://hlouiso.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Hugo Louiso">
+  <meta property="og:description" content="PhD student in cryptography at the PQC-X lab, Xi'an Jiaotong-Liverpool University, Suzhou, China.">
+  <meta property="og:url" content="https://hlouiso.github.io/">
+  <meta property="og:image" content="https://hlouiso.github.io/assets/hugo-louiso.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e4f91'/%3E%3Ctext x='32' y='34' dominant-baseline='central' text-anchor='middle' font-family='Georgia, serif' font-size='30' fill='%23fff'%3EHL%3C/text%3E%3C/svg%3E">
+
+  <link rel="preload" href="fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/newsreader-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hugo Louiso",
+    "url": "https://hlouiso.github.io/",
+    "image": "https://hlouiso.github.io/assets/hugo-louiso.jpg",
+    "email": "mailto:hugolouiso@gmail.com",
+    "jobTitle": "PhD student in cryptography",
+    "affiliation": [
+      { "@type": "CollegeOrUniversity", "name": "Xi'an Jiaotong-Liverpool University" },
+      { "@type": "CollegeOrUniversity", "name": "University of Liverpool" }
+    ],
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Bordeaux" },
+    "sameAs": ["https://github.com/hlouiso"]
+  }
+  </script>
 </head>
 <body>
-  <main class="container">
-    <section class="hero">
-      <p class="eyebrow">Personal website</p>
-
-      <div class="profile-header">
+  <div class="page">
+    <header class="hero">
+      <div class="identity">
         <img
-          class="profile-photo"
-          src="https://github.com/hlouiso.png"
-          alt="Profile photo of Hugo Louiso"
-        />
-
+          class="portrait"
+          src="assets/hugo-louiso.jpg"
+          width="120"
+          height="120"
+          alt="Portrait of Hugo Louiso"
+          fetchpriority="high"
+        >
         <div>
           <h1>Hugo Louiso</h1>
-
-          <p class="subtitle">
-            Cryptography PhD student
-          </p>
+          <p class="role">PhD student in cryptography</p>
         </div>
       </div>
 
-      <p class="intro">
-        I am a French PhD student in cryptography at the PQC-X lab, Xi'an Jiaotong-Liverpool University, Suzhou, China. 
-      </p>
+      <div class="intro">
+        <p>
+          I am a French PhD student in cryptography at the PQC-X lab,
+          Xi'an Jiaotong-Liverpool University, Suzhou, China.
+        </p>
+        <p>
+          I graduated from the Cryptography and Computer Security program
+          at the University of Bordeaux, France.
+        </p>
+      </div>
 
-      <p class="intro">
-        I graduated from the Cryptography and Computer Security program at the University of Bordeaux, France.
-      </p>
-
-      <p class="email">
-        hugolouiso@gmail.com
-      </p>
-
-      <div class="buttons">
-        <a class="button primary" href="CV_LOUISO_Hugo_EN.pdf" target="_blank">
-          View my resume
+      <nav class="contact" aria-label="Contact and profiles">
+        <a class="pill" href="mailto:hugolouiso@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          hugolouiso@gmail.com
         </a>
-
-        <a class="button secondary" href="https://github.com/hlouiso" target="_blank">
+        <a class="pill" href="CV_LOUISO_Hugo_EN.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+            <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+            <path d="M10 9H8"/>
+            <path d="M16 13H8"/>
+            <path d="M16 17H8"/>
+          </svg>
+          CV <span class="pill-hint">PDF</span>
+        </a>
+        <a class="pill" href="https://github.com/hlouiso" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
           GitHub
         </a>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <section class="card">
-      <h2>Research interests</h2>
+    <main>
+      <section class="section" aria-labelledby="interests-title">
+        <h2 id="interests-title">Research interests</h2>
+        <ul class="interests" role="list">
+          <li><span class="index" aria-hidden="true">01</span>Post-quantum cryptography</li>
+          <li><span class="index" aria-hidden="true">02</span>Zero-knowledge proofs</li>
+          <li><span class="index" aria-hidden="true">03</span>Hash-based constructions</li>
+          <li><span class="index" aria-hidden="true">04</span>Cryptographic implementation</li>
+        </ul>
+      </section>
 
-      <ul>
-        <li>Post-quantum cryptography</li>
-        <li>Zero knowledge proofs</li>
-        <li>Hash-based constructions</li>
-        <li>Cryptographic implementation</li>
-      </ul>
-    </section>
+      <section class="section" aria-labelledby="background-title">
+        <h2 id="background-title">Academic background</h2>
+        <ol class="timeline">
+          <li class="entry">
+            <span class="entry-date">2020 – 2023</span>
+            <div class="entry-body">
+              <p class="entry-title">Bachelor in Fundamental Mathematics</p>
+              <p class="entry-place">University of Bordeaux</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="entry-date">2023 – 2025</span>
+            <div class="entry-body">
+              <p class="entry-title">Master's in Cryptography and Cybersecurity</p>
+              <p class="entry-place">University of Bordeaux</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="entry-date">2025</span>
+            <div class="entry-body">
+              <p class="entry-title">Internship</p>
+              <p class="entry-place">UPC, Barcelona</p>
+              <p class="entry-note"><span class="label">Supervisor:</span> Javier Herranz Sotoca</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="entry-date">2026 – now</span>
+            <div class="entry-body">
+              <p class="entry-title">PhD student</p>
+              <p class="entry-place"><span>Xi'an Jiaotong-Liverpool University</span><span class="sep" aria-hidden="true">·</span><span>University of Liverpool</span></p>
+              <p class="entry-note"><span class="label">Supervisor:</span> Jintai Ding</p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-    <section class="card">
-      <h2>Academic background</h2>
+      <section class="section" aria-labelledby="work-title">
+        <h2 id="work-title">Selected work</h2>
+        <ol class="papers">
+          <li class="entry">
+            <span class="entry-date">2025</span>
+            <div class="entry-body">
+              <h3 class="paper-title">
+                <a href="https://eprint.iacr.org/2025/2097" target="_blank" rel="noopener">Hash-Based Blind Signatures: First Steps</a>
+              </h3>
+              <p class="paper-authors">Javier Herranz, <span class="me">Hugo Louiso</span></p>
+              <p class="paper-venue">Cryptology ePrint Archive, Paper 2025/2097 (preprint)</p>
+              <div class="paper-links">
+                <a class="chip" href="https://eprint.iacr.org/2025/2097.pdf" target="_blank" rel="noopener">
+                  PDF
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a class="chip" href="https://github.com/hlouiso/blind_MSS" target="_blank" rel="noopener">
+                  Implementation
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
 
-      <ol class="timeline">
-        <li class="timeline-item">
-          <span class="timeline-date">2020 – 2023</span>
-          <div>
-            <strong>Bachelor in Fundamental Mathematics</strong>
-            <span class="timeline-place">University of Bordeaux</span>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-date">2023 – 2025</span>
-          <div>
-            <strong>Masters in Cryptography and Cybersecurity</strong>
-            <span class="timeline-place">University of Bordeaux</span>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-date">2025</span>
-          <div>
-            <strong>Internship</strong>
-            <span class="timeline-place">UPC, Barcelona &mdash; supervisor: Javier Herranz Sotoca</span>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-date">2026 – now</span>
-          <div>
-            <strong>PhD student</strong>
-            <span class="timeline-place">PQC-X (XJTLU), Suzhou, China</span>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section class="card">
-      <h2>Selected work</h2>
-
-      <div class="paper">
-        <p class="paper-title">
-          <a href="https://eprint.iacr.org/2025/2097" target="_blank">
-            Hash-Based Blind Signatures: First Steps
-          </a>
-        </p>
-        <p class="paper-authors">Javier Herranz, Hugo Louiso</p>
-        <p class="paper-venue">Cryptology ePrint Archive, Paper 2025/2097 (preprint)</p>
-        <div class="project-links">
-          <a href="https://eprint.iacr.org/2025/2097.pdf" target="_blank">PDF</a>
-          <a href="https://github.com/hlouiso/blind_MSS" target="_blank">Implementation</a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
+    <footer class="footer">
       <p>© 2026 Hugo Louiso</p>
+      <p class="place">Suzhou, China</p>
     </footer>
-  </main>
+  </div>
 </body>
 </html>
