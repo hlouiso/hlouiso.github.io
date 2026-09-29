@@ -181,6 +181,7 @@ h1 {
   max-width: 38rem;
   font-size: 1.125rem;
   line-height: 1.7;
+  text-wrap: pretty;
 }
 
 .intro p:last-child {
@@ -504,7 +505,7 @@ h2::after {
   }
 
   .role {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .intro p {
