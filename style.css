@@ -124,7 +124,7 @@ svg {
 }
 
 .page {
-  width: min(44rem, 100% - 2.5rem);
+  width: min(56rem, 100% - 3rem);
   margin: 0 auto;
   padding: 5.5rem 0 3.5rem;
 }
@@ -178,7 +178,7 @@ h1 {
 
 .intro p {
   margin: 0 0 1rem;
-  max-width: 38rem;
+  max-width: 44rem;
   font-size: 1.125rem;
   line-height: 1.7;
   text-wrap: pretty;
@@ -186,6 +186,10 @@ h1 {
 
 .intro p:last-child {
   margin-bottom: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .contact {
@@ -488,7 +492,7 @@ h2::after {
   }
 
   .page {
-    width: min(44rem, 100% - 2rem);
+    width: min(56rem, 100% - 2rem);
     padding-top: 3.5rem;
   }
 
