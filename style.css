@@ -178,9 +178,12 @@ h1 {
 
 .intro p {
   margin: 0 0 1rem;
-  font-size: 1.125rem;
+  /* Tuned so the justified intro breaks without stretched word gaps at the
+     full 56rem column. Re-check the line breaks if the text changes. */
+  font-size: 1.1rem;
   line-height: 1.7;
-  text-wrap: pretty;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .intro p:last-child {
@@ -519,6 +522,9 @@ h2::after {
 
   .intro p {
     font-size: 1.0625rem;
+    text-align: left;
+    hyphens: manual;
+    text-wrap: pretty;
   }
 
   .hero {
