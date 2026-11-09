@@ -180,8 +180,7 @@ h1 {
   margin: 0 0 1rem;
   font-size: 1.125rem;
   line-height: 1.7;
-  text-align: justify;
-  hyphens: auto;
+  text-wrap: pretty;
 }
 
 .intro p:last-child {
@@ -520,9 +519,6 @@ h2::after {
 
   .intro p {
     font-size: 1.0625rem;
-    text-align: left;
-    hyphens: manual;
-    text-wrap: pretty;
   }
 
   .hero {
